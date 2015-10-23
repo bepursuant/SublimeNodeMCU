@@ -5,6 +5,7 @@ This is almost entirely based on the original work posted on the esp8266.com for
 
 # How it works (under the hood)
 This script takes a few steps to upload your file...
+
 1. Establish a Serial Connection with the NodeMCU based on the port set in the header
 2. Sends a small shell script to the NodeMCU which it immediately runs. This script receives serial data on the COM port and writes it to the file on the NodeMCU. I'm not sure if it could be done differently, but I found this method pretty clever, and it works.
 3. Reads the file into a buffer and chunks it over the COM port to the NodeMCU, checking for an ACK every chunk_size bytes
