@@ -1,5 +1,5 @@
 {
-	"shell_cmd": "\"C:\\Program Files\\Python 3.5\\python.exe\" -u \"E:\\home\\kevin\\Projects\\NodeMCU\\SublimeNodeMCU\\SublimeNodeMCU.py\" \"$file\"",
+	"shell_cmd": "\"C:\\Program Files\\Python 3.5\\python.exe\" -u \"$packages\\User\\SublimeNodeMCU\\SublimeNodeMCU.py\" \"$file\"",
 	"file_regex": "^(.*\\.lua):([0-9]*):",
-	"syntax": "Packages/Lua/Lua.tmLanguage"
+	"syntax": "Packages/Lua/Lua.tmLanguage",
 }

@@ -21,3 +21,10 @@ Reading E:\home\kevin\Projects\Pursuant\GarageMCU\GarageMCU.lua into memory...ok
   7 % 15 % 23 % 31 % 38 % 46 % 54 % 62 % 70 % 77 % 85 % 93 %
 [Finished in 6.8s]
 ```
+
+# Installation
+
+1. Clone this project into `%APPDATA%\Sublime Text 3\Packages\User`. Rename folder to "SublimeNodeMCU" if necessary. Full file path to the sublime-build file should be `%APPDATA%\Sublime Text 3\Packages\User\SublimeNodeMCU\SublimeNodeMCU.sublime-build`.
+2. Adjust the settings at the top of SublimeNodeMCU.py to match your environment. Mainly, the COM port variable.
+3. Within Sublime Text 3, click `Tools >> Build System >> SublimeNodeMCU`.
+4. Open a lua file and press F7. You will see the console output, and if everything is workign, something similar to the output above.
