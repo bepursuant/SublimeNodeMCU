@@ -13,13 +13,19 @@ This script takes a few steps to upload your file...
 
 # Example Console Output
 ```
-Uploading to NodeMCU...
+[SublimeNodeMCU] Uploading...
 Opening serial port COM4:9600...ok!
 Reset...ok!
-Sending Save Command to NodeMCU....ok!
-Reading E:\home\kevin\Projects\Pursuant\GarageMCU\GarageMCU.lua into memory...ok!
-  7 % 15 % 23 % 31 % 38 % 46 % 54 % 62 % 70 % 77 % 85 % 93 %
-[Finished in 6.8s]
+Sending receive script to NodeMCU...ok!
+Reading E:\home\kevin\Documents\GitHub\GarageNodeMCU\GarageNodeMCU.lua into memory...ok!
+Sending... 13 % 27 % 40 % 54 % 68 % 81 % 95 % 100 %
+ok!
+Reset...ok!
+Running GarageNodeMCU.lua... > dofile("GarageNodeMCU.lua")
+
+Program Start
+
+> [Finished in 10.4s]
 ```
 
 # Installation
