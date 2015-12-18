@@ -4,7 +4,7 @@ import os, serial, sys
 # are sensible, but you will likely need to adjust them for your specific computer.
 # 
 port = 'COM4'   #the COM port to which the NodeMCU is connected
-baud = 9600     #usually 9600 or 115200
+baud = 115200     #usually 9600 or 115200
 
 reset = True    #automtically reset the NodeMCU before writing
 execute = True  #automatically execute uploaded file after upload
@@ -25,10 +25,12 @@ filename = os.path.basename(filepath)
 # is much faster than the ESPlorer method of sending the code line by line.
 def sendReceiveScript(serial, filename='init.lua'):
     receiveLua = \
-    r"""file.remove('%s')
+    r"""tmr.stop(0)
+        file.remove('%s')
         file.open('%s', 'w')
         uart.on('data', 255,
           function (d)
+            tmr.stop(0)
             c = tonumber(d:sub(1, 4))
             d = d:sub(5, 4+c)
             file.write(d)
